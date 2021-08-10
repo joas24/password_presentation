@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>password_presentation</title>
+    <style>
+        ol {
+            border-right: black solid 2px;
+            width: 250px;
+            font-size: 20px;
+            margin:0px;
+        }
+        #one{
+            display:grid;
+            grid-template-columns:300px 1fr;
+        }
+        li{
+            margin-top:8px;
+            margin-bottom:8px;
+        }
+        a{
+            text-decoration:none;
+            color:black;
+        }
+        ul{
+            font-size:30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align:center; margin:10px;"><b>HTML과 CSS를 활용한 비밀번호 구현</b></h1>
+    <h3 style="text-align:right; margin:1px;">21108 김형섭</h3>
+    <hr>
+    <div id="one">
+        <ol calss="ol">
+            <li><a href="index.html">HTML, CSS, JAVA SCRIPT</a></li>
+            <li><a href="site.html">작동 사이트</a></li>
+            <li><a href="how.html">작동 방식</a></li>
+            <li><a style="font-weight:550; color:black;">한계점</a></li>
+        </ol>
+        <div>
+            <ul>
+                <li>같은 행의 수를 2개 이상 포함하는 비밀번호를 설정할 수 없음</li><br>
+                <li>마지막 숫자가 일치한다면 앞의 두 숫자는 순서를 바꿔도 정답으로 처리됨</li><br>
+                <li>각 행 별로 마지막 숫자만 일치하고 마지막으로 누르는 숫자가 일치할 경우 정답으로 처리됨</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>password_presentation</title>
+    <style>
+        ol {
+            border-right: black solid 2px;
+            width: 250px;
+            font-size: 20px;
+            margin: 0px;
+        }
+
+        #one {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+        }
+
+        li {
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        input{
+            width:50px;
+            height:60px;
+            margin:4px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align:center; margin:10px;"><b>HTML과 CSS를 활용한 비밀번호 구현</b></h1>
+    <h3 style="text-align:right; margin:1px;">21108 김형섭</h3>
+    <hr>
+    <div id="one">
+        <ol calss="ol">
+            <li><a href="index.html">HTML, CSS, JAVA SCRIPT</a></li>
+            <li><a style="font-weight:550; color:black;">작동 사이트</a></li>
+            <li><a href="how.html">작동 방식</a></li>
+            <li><a href="limit.html">한계점</a></li>
+        </ol>
+        <div style="text-align:center;">
+            <span id="pass" style="display:none;">비밀번호</span>
+            <input type="button" value="1" onclick="document.querySelector('#pass').style.color = 'blue'">
+            <input type="button" value="2" onclick="document.querySelector('#pass').style.color = 'red'
+            var pss = document.querySelector('#pass');
+            if(pss.style.fontSize == '9px' && pss.style.backgroundColor == 'blue'){alert('정답')}">
+            <input type="button" value="3" onclick="document.querySelector('#pass').style.color = 'yellow'"><br>
+            <input type="button" value="4" onclick="document.querySelector('#pass').style.backgroundColor='blue'">
+            <input type="button" value="5" onclick="document.querySelector('#pass').style.backgroundColor='red'">
+            <input type="button" value="6" onclick="document.querySelector('#pass').style.backgroundColor='yellow'"><br>
+            <input type="button" value="7" onclick="document.querySelector('#pass').style.fontSize ='7px'">
+            <input type="button" value="8" onclick="document.querySelector('#pass').style.fontSize ='8px'">
+            <input type="button" value="9" onclick="document.querySelector('#pass').style.fontSize ='9px'">
+            <br><br>
+        </div>
+    </div>
+</body>
+
+</html>

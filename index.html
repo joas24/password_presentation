@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>password_presentation</title>
+    <style>
+        ol {
+            border-right: black solid 2px;
+            width: 250px;
+            font-size: 20px;
+            margin:0px;
+        }
+        #one{
+            display:grid;
+            grid-template-columns:300px 1fr;
+        }
+        li{
+            margin-top:8px;
+            margin-bottom:8px;
+        }
+        a{
+            text-decoration:none;
+            color:black;
+        }
+        span{
+            font-size:50px;
+        }
+        input{
+            height:40px;
+        }
+        img{
+            width:13%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align:center; margin:10px;"><b>HTML과 CSS를 활용한 비밀번호 구현</b></h1>
+    <h3 style="text-align:right; margin:1px;">21108 김형섭</h3>
+    <hr>
+    <div id="one">
+        <ol calss="ol">
+            <li><a style="font-weight:550; color:black;">HTML, CSS, JAVA SCRIPT</a></li>
+            <li><a href="site.html">작동 사이트</a></li>
+            <li><a href="how.html">작동 방식</a></li>
+            <li><a href="limit.html">한계점</a></li>
+        </ol>
+        <div>   
+                <img src="html.png">
+                <span>HTML</span><br>    
+                <img src="css.png">
+                <span style="background-color:powderblue; color:white;">CSS</span><br>  
+                <img src="java.png">
+                <span id="js";>JAVA SCRIPT</span> <input type="button" value="blue" onclick="document.querySelector('#js').style.color='blue'">
+                <input type="button" value="red" onclick="document.querySelector('#js').style.color='red'">
+                <input type="button" value="hide" onclick="
+                var java = document.querySelector('#js');
+                if(this.value == 'hide'){
+                    java.style.display='none';
+                    this.value = 'show';
+                }
+                else{
+                    java.style.display='inline';
+                    this.value = 'hide';
+                }">
+        </div>
+    </div>
+</body>
+
+</html>
